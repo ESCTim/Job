@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --clr-blue: rgba(160, 0, 200, 0.5);
+    --clr-black: #000;
+    --clr-light-blue: #42005248;
+    --clr-light-blue-border: #4200524f;
+    --clr-white: #fff;
+    --clr-opacity-black: rgba(160, 0, 200, 0.5);
+    --clr-opacity-white: rgba(212, 52, 252, 0.5);
+    --clr-highlight: #74fbf6; /*"Du bist Bewustlos" */
+    
+    --lbg-background: linear-gradient(177.36deg, rgba(0,0,0,0) 4.21%, var(--clr-highlight) 120.47%);
+    --bbg-background: linear-gradient(to bottom, #a000c8bd, transparent);
+    --lcbg-background: linear-gradient(90deg, #9313b3a6 0%, #660080 100%);
+
+    --ff-basic: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    font-family: var(--ff-basic);
+    font-size: 1.5vh;
+    color: var(--clr-white);
+    background: #121212;
+    background: url(../img/ingame.png);
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.main__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #0045a573 0%, #002f7042 100%);
+    padding: 2vh;
+}
+
+.main__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    padding: 2vh;
+}
+
+.main__death-screen-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.main__death-header {
+    font-size: 3.5vh;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fb7479;
+    text-shadow: 0vh 0vh 1.7vh #fb7479;
+    /* background-color: #12121285; */
+    border-radius: 15px;
+    padding: 1vh 2vh;
+}
+
+.main__death-description {
+    font-size: 1.5vh;
+    font-weight: 600;
+    margin-top: 1.5vh;
+    max-width: 30vh;
+    color: rgba(255, 255, 255, 0.7); /*"Du wirst in.. wiederbelebt" */
+    text-align: center;
+    margin-bottom: 5vh;
+    font-weight: 400;
+}
+
+.main__medic-description {
+    font-size: 1.5vh;
+    font-weight: 400;
+    margin-top: 2vh;
+    max-width: 30vh;
+    color: rgba(255, 255, 255, 0.7); /*"DrÃƒÂ¼cke H Dispatch" */
+    text-align: center;
+}
+
+.main__bottom-container {
+    position: absolute;
+    left: 32.0vh;
+    bottom: 6.5vh;
+}
+
+.main__bottom-p {
+    position: absolute;
+    left: 4vh;
+    bottom: 2.5vh;
+    color: rgba(255, 255, 255, .7);
+}
+
+.main__bottom-container1 {
+    position: absolute;
+    left: 6.0vh;
+    bottom: 9vh;
+    margin-left: 130px;
+    margin-bottom: 130px;
+}
+
+.main__bottom-p1 {
+    position: absolute;
+    left: 5vh;
+    bottom: 2.5vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0vh 0vh 1.7vh #ffffff;
+}
+
+.main__bottom-container2 {
+    position: absolute;
+    left: 3vh;
+    bottom: 14.5vh;
+    margin-bottom: 71px;
+}
+
+.main__bottom-p2 {
+    position: absolute;
+    left: 5vh;
+    bottom: 2.5vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0vh 0vh 1.7vh #ffffff;
+}
+
+.main__e-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: .3vh solid var(--clr-highlight);
+    box-shadow: 0vh 0vh 1vh var(--clr-highlight);
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0vh 0vh 1vh #fff;
+    margin-bottom: 1.5vh;
+    font-weight: 700;
+}
+
+.main__bottom-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__e-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: .3vh solid var(--clr-highlight);
+    box-shadow: 0vh 0vh 1vh var(--clr-highlight);
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0vh 0vh 1vh #fff;
+    margin-bottom: 1.5vh;
+    font-weight: 700;
+}
+
+.main__bottom-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__e-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: .3vh solid var(--clr-highlight);
+    box-shadow: 0vh 0vh 1vh var(--clr-highlight);
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    color: var(--clr-highlight);
+    text-shadow: 0vh 0vh 1vh var(--clr-highlight);
+    margin-bottom: 1.5vh;
+}
+
+.main__bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.time__container {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #121212b9;
+    border-radius: 20px;
+    padding: 1vh 2vh;
+
+}
+
+.main__weak-container {
+    position: absolute;
+    bottom: 23vh;
+    left: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.main__weak-container i {
+    font-size: 2vh;
+    color: var(--clr-blue);
+    text-shadow: 0vh 0vh 1vh var(--clr-blue);
+}
+
+.main__weak-container p {
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 600;
+    text-shadow: 0vh 0vh 1vh rgba(255, 255, 255, .7);
+}
+
+.main__weak-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -1vh;
+}
+
+.main__weak-flex p {
+    color: var(--clr-blue);
+    text-shadow: 0vh 0vh 1vh var(--clr-blue);
+}
