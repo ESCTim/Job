@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'bankgothic';
+	src: url('../fonts/bankgothic.ttf')
+}
+
+.inventory_notify {
+	font-family: 'bankgothic';
+	position: absolute;
+	right: 3vh;
+	bottom: 3vh;
+	font-size: 2em;
+	font-weight: bold;
+	color: rgb(237, 2, 2);
+	text-shadow: -0.1vh -0.1vh 0 #000, 0.1vh -0.1vh 0 #000, -0.1vh 0.1vh 0 #000, 0.1vh 0.1vh 0 #000;
+	animation: aaa 1s linear;
+}
+
+@keyframes aaa {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
